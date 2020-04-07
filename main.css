@@ -18,7 +18,7 @@
 }
 
 .answer {
-    font-size: 18pt;
+    font-size: 16t;
     margin-top: 40px;
     background-color: #D1D1D1;    
 }
@@ -26,6 +26,30 @@
 .submit {
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.selected {
+    border: 5px solid blue;
+}
+
+.default {
+    color: black;
+}
+
+.correct {
+    color: green;
+}
+
+.correctBorder {
+    border: 5px solid green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.incorrectBorder {
+    border: 5px solid red;
 }
 
 @media screen and (max-width: 400px) {
