@@ -3,29 +3,41 @@
     text-align: center;
 }
 
+body {
+    background-color: #fd84ed;
+    background-image: radial-gradient(white 30%, transparent 0), radial-gradient(white 30%, transparent 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    font-family: "Comic Neue", cursive;
+}
+
 .quiz-app {
-    background-color: #F3F3F3;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .quiz-app h1 {
     font-size: 24pt;
     margin-top: 40px;
+    padding-top: 20px;
 }
 
 .quiz-app h2 {
     font-size: 16pt;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .answer {
     font-size: 16t;
-    margin-top: 40px;
-    background-color: #D1D1D1;    
+    margin-top: 40px;  
 }
 
 .submit {
     margin-top: 40px;
     margin-bottom: 40px;
+    background-color:  #fd84ed;
+    color: white;
+    font-weight: bold;
 }
 
 .selected {
