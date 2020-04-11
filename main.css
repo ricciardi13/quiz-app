@@ -27,6 +27,10 @@ body {
     margin-top: 20px;
 }
 
+.doughnut-img {
+    width: 100%;
+}
+
 .answer {
     font-size: 16t;
     margin-top: 40px;  

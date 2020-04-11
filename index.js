@@ -57,6 +57,8 @@ function start(){
     questionNumber = 0;
     score = 0;
     updateHeader();
+    $(".js-doughnut-img").attr("src", "images/5.jpg");
+    $(".js-doughnut-img").attr("alt", "a spread of colorful doughnuts");
     $(".js-answer").hide();
     $(".js-submit").html("Begin");
     $(".js-quiz-app").on("click", ".js-submit", function(event){
@@ -75,6 +77,7 @@ function nextQuestion(){
     if(questionNumber === 5){
         final();
     } else {
+        $(".js-doughnut-img").hide();
         questionNumber++;
         updateHeader();
         $(".js-answer").show();
@@ -109,11 +112,11 @@ function updateQuestions(){
 function submit(answer){
     if (answer.html() === STORE[questionNumber].correctAnswer){
         score++;
-        $(".js-h2").html("Correct! " + score + "/" + questionNumber + " answers correct.")
+        $(".js-h2").html("Correct! " + score + "/" + questionNumber + " answers correct.");
         $(".js-h2").addClass("correct");
         answer.addClass("correctBorder");
     } else {
-        $(".js-h2").html("Incorrect! " + score + "/" + questionNumber + " answers correct.")
+        $(".js-h2").html("Incorrect! " + score + "/" + questionNumber + " answers correct.");
         $(".js-h2").addClass("incorrect");
         answer.addClass("incorrectBorder");
     }
@@ -136,6 +139,9 @@ function final(){
     $(".js-h2").html("You scored a " + score + "/5!");
     $(".js-h2").removeClass("correct incorrect");
     $(".js-answer").hide();
+    $(".js-doughnut-img").show();
+    $(".js-doughnut-img").attr("src", "images/6.jpg");
+    $(".js-doughnut-img").attr("alt", "chocolate cake doughnut with bite missing");
     $(".js-submit").html("Restart");
     $(".quiz-app").on("click", ".js-submit", function(event){
         event.preventDefault();
